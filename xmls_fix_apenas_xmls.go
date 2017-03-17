@@ -34,8 +34,8 @@ func main() {
 	})
 
 	for _, file := range fileList {
-		ext := string(file[len(file)-3:])
-		if ext =="xml" || ext=="zip"{
+		ext := filepath.Ext(file)
+		if ext ==".xml" {
 			arq := make([]byte,12)
 			rand.Read(arq)
 			arq2 := fmt.Sprintf("%X",arq)
