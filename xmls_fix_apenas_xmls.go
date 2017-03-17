@@ -12,7 +12,7 @@ import (
 func main() {
 	fmt.Println("Por favor aguarde o analise da pasta...")
 	configura := goftp.Config{
-		User: "user_ftp",
+		User: "zzzz",
 		Password: "pwd_ftp",
 		ConnectionsPerHost: 10,
 		Timeout: 10 * time.Second,
